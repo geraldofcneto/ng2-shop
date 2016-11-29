@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products">
+            <td>{{p.id}}</td>
+            <td>{{p.title}}</td>
+            <td>{{p.description}}</td>
+            <td>{{p.price}}</td>
+            <td>
+                <button type="button" class="btn btn-default" aria-label="Shop" (click)="shop(p)">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

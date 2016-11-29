@@ -1,0 +1,21 @@
+<div class="cadastro">
+    <form>
+        <fieldset>
+            <legend>Cadastro de Produtos</legend>
+            <p>
+                <label for="title">Titulo</label>
+                <input type="text" id="title" #title>
+            </p>
+            <p>
+                <label for="price">Preço</label>
+                <input type="text" id="price" #price>
+            </p>
+            <p>
+                <label for="description">Descrição</label>
+                <textarea type="text" id="description" #description></textarea>
+            </p>
+
+        </fieldset>
+        <p><button type="button" (click)="saveProduct(title.value, description.value, price.value)">Save</button></p>
+    </form>
+</div>
